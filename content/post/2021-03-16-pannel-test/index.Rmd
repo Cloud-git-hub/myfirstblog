@@ -4,10 +4,22 @@ title: "My_First_R_MarkDown"
 
 author: "RFriend"
 
-date: '2017.05.02'
+date: '2021.03.17'
 
 
 ---
 
+```{r, echo=F, message=F, warning=F}
+a="~할 것을 기억하다"
+b=c("remember + to부정사")
+```
+<button
+type="button"
+style="color: gold; background:black; font-size:1.1em; border-radius:0.5em; padding:5px 20px;"
+onclick="alert('`r a[1]`')">`r b[1]`
+</button>
 
-<button type="button" onclick="alert('Hello world!')">Click Me!</button>
+
+
+
+
