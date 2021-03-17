@@ -5,6 +5,8 @@ date: '2021.03.17'
 
 ~~~{=html}
 <meta charset="UTF-8" />
+<script src="sweetalert2.all.min.js"></script>
+
 
 ```{r, echo=F, message=F, warning=F, results='asis'}
 
@@ -12,8 +14,14 @@ get_btn <- function(Label,t1){
   qwer <- paste0(
   '
     <script>
-      function btn(sample){
-        alert(sample);
+      function btn(sample,s2){
+        Swal.fire({
+          title: s2,
+          html: sample,
+          
+          confirmButtonText: ',"'","   ","'",'
+        })
+
       }
     </script>
     
@@ -24,7 +32,7 @@ get_btn <- function(Label,t1){
              font-size:1.3em;
              border-radius:0.5em;
              padding:5px 20px;"
-      onclick="javascript:btn(',"'",t1[1],"'",' )">',
+      onclick="javascript:btn(',"'",t1[1],"'",",'",Label,"'",' )">',
       Label,'
       </button>
     </body>
@@ -45,7 +53,7 @@ pos2 <- c(pos2,pos[len])
 dd <- matrix("",nrow=len,ncol=2)
 for(i in 1:len){
   dd[i,] <- c(dat[pos[i],1],
-              paste0("\\n",dat[pos[i],1],"\\n\\n",paste0(dat[pos[i]:pos2[i],2],sep="\\n",collapse="")))
+              paste0(dat[pos[i]:pos2[i],2],sep="<br>",collapse=""))
 }
 
 for(i in 1:len){
