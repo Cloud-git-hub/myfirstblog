@@ -44,7 +44,8 @@ pos2 <- c(pos2,pos[len])
 
 dd <- matrix("",nrow=len,ncol=2)
 for(i in 1:len){
-  dd[i,] <- c(dat[pos[i],1],paste0(dat[pos[i]:pos2[i],2],sep="\\n",collapse=""))
+  dd[i,] <- c(dat[pos[i],1],
+              paste0("\\n",dat[pos[i],1],"\\n\\n",paste0(dat[pos[i]:pos2[i],2],sep="\\n",collapse="")))
 }
 
 for(i in 1:len){
