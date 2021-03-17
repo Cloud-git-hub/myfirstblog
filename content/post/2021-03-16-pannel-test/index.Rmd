@@ -6,36 +6,27 @@ date: '2021.03.17'
 ~~~{=html}
 <meta charset="UTF-8" />
 <script src="sweetalert2.all.min.js"></script>
-
+<script>
+      function btn(sample,s2){
+        Swal.fire({
+          title: s2,
+          html: sample,
+          confirmButtonText: '  '
+        })
+      }
+</script>
 
 ```{r, echo=F, message=F, warning=F, results='asis'}
 
 get_btn <- function(Label,t1){
   qwer <- paste0(
   '
-    <script>
-      function btn(sample,s2){
-        Swal.fire({
-          title: s2,
-          html: sample,
-          
-          confirmButtonText: ',"'","   ","'",'
-        })
-
-      }
-    </script>
-    
-    <body>
       <button
-      style="color: gold;
-             background:black;
-             font-size:1.3em;
-             border-radius:0.5em;
-             padding:5px 20px;"
+      style="color: gold; background:black; font-size:1.2em;
+             border-radius:0.5em; padding:4px 18px;"
       onclick="javascript:btn(',"'",t1[1],"'",",'",Label,"'",' )">',
       Label,'
       </button>
-    </body>
   '
   )
   cat(qwer)
@@ -59,9 +50,6 @@ for(i in 1:len){
 for(i in 1:len){
   get_btn(dd[i,1],dd[i,2])
 }
-
-# get_btn("remember + to V","~할 것을 기억하다")
-# get_btn("remember + V ing","~했던 것을 기억하다")
 
 
 ```
