@@ -1,25 +1,59 @@
 ---
-
-title: "My_First_R_MarkDown"
-
-author: "RFriend"
-
+title: "English"
 date: '2021.03.17'
-
-
 ---
 
-```{r, echo=F, message=F, warning=F}
-a="~할 것을 기억하다"
-b=c("remember + to부정사")
+~~~{=html}
+<meta charset="UTF-8" />
+
+```{r, echo=F, message=F, warning=F, results='asis'}
+
+get_btn <- function(Label,t1){
+  qwer <- paste0(
+  '
+    <script>
+      function btn(sample){
+        alert(sample);
+      }
+    </script>
+    
+    <body>
+      <button
+      style="color: gold;
+             background:black;
+             font-size:1.3em;
+             border-radius:0.5em;
+             padding:5px 20px;"
+      onclick="javascript:btn(',"'",t1[1],"'",' )">',
+      Label,'
+      </button>
+    </body>
+  '
+  )
+  cat(qwer)
+}
+
+
+dat <- read.csv("./data.csv",header = T)
+
+pos <- which(dat[,1]!="")
+len <- length(pos)
+pos2 <- pos-1
+pos2 <- pos2[-1]
+pos2 <- c(pos2,pos[len])
+
+dd <- matrix("",nrow=len,ncol=2)
+for(i in 1:len){
+  dd[i,] <- c(dat[pos[i],1],paste0(dat[pos[i]:pos2[i],2],sep="\\n",collapse=""))
+}
+
+for(i in 1:len){
+  get_btn(dd[i,1],dd[i,2])
+}
+
+# get_btn("remember + to V","~할 것을 기억하다")
+# get_btn("remember + V ing","~했던 것을 기억하다")
+
+
 ```
-<button
-type="button"
-style="color: gold; background:black; font-size:1.1em; border-radius:0.5em; padding:5px 20px;"
-onclick="alert('`r a[1]`')">`r b[1]`
-</button>
-
-
-
-
-
+~~~
