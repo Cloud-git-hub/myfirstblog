@@ -100,30 +100,30 @@ to 부정사를 목적어로 취하는 동사,choose(=decide)
 ,consider
 ,suggest
 형식 별 해석 방법,1형식: S+자V
-,'S'가 'V'하다 / 'S'는 가다
+,"S가 V하다, S는 가다"
 ,Birds sleep (in the tree).
 ,I go (to the school).
-,.
+,_
 ,2형식: S+beV+주격C
-,'S'가 'C'이다 / 'S'가 'C'되다
+,"S가 C이다, S가 C되다"
 ,She is a teacher.
 ,I turned sad.
 ,The dogs can make a nice pet.
-,.
+,_
 ,3형식: S+타V+직O
-,'S'가 'O'를 'V'하다
+,S가 O를 V하다
 ,She made a gift.
 ,I choose to study English.
 ,I mind staying along at night.
 ,I remembered to meet you.
 ,I remembered meeting you.
-,.
+,_
 ,4형식: S+타V+간O+직O
-,'S'가 '간O'에게 '직O'을 'V'하다
+,S가 간O에게 직O을 V하다
 ,He give me a book.
-,.
+,_
 ,5형식: S+타V+직O+목적격O.C
-,'S'가 '직O'에게 'O.C'하게 하다
+,S가 직O에게 O.C하게 하다
 ,I know him kind.
 ,I found him a liar.
 ,He consider Tom clever.
