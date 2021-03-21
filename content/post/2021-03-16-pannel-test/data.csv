@@ -4,14 +4,10 @@ Label,text
 ,scarely
 ,little
 ,seldom
-greet,"v. 맞이하다, 환영하다"
-aid,"n. 원조, 지원"
-,v. 돕다
 appreciate,v. ~에 감사하다(진가를 인정하다)
 ,인정하다
 ,감상하다
 ,이해하다
-used to V,(과거에)~하곤 했다
 now that,because
 be involved in,"~와 연루되다, 관련되다"
 take A to B,A를 B로 데려가다
@@ -24,16 +20,13 @@ long이 동사,v. 갈망하다. 열망하다.
 ,:= long for N
 ,:= long to V
 view point,관점
-,:= point of view
-,(x) view point
+,(O) point of view
+,(x) view of point
 in response to,"~에 대응하여, 반응하여"
 present,"n. 현재, 선물"
 ,"a. 현재의, 출석한"
 ,"v. 나타나다, 보여주다"
 {know; tell} A from B,A와 B를 구별하다
-significant,"a. 상당한, 중요한"
-insignificant,"a. 사소한, 하찮은"
-disastrously,ad. 처참하게
 out of question,a. 확실한
 out of the question,a. 불가능한
 to 안되는 동사,contact
@@ -41,9 +34,6 @@ to 안되는 동사,contact
 ,reach
 ,oppose
 ,approch
-well,n. 우물
-,a. 건강한
-,ad. 잘
 look for + 물건,~을 찾아보다
 look up + 단어,~을 찾아보다
 pretend to,~인척하다
@@ -73,3 +63,67 @@ S □ that S (should) V,propose
 ,count on
 ,fall back on
 ,turn to
+귀신동사(자동사),appear
+,disapper
+,occur
+,happen
+,take place
+,miss
+A를 B로 여기다,(5형식)
+,consider A B
+,regard A as B
+,refer to A as B
+,look (up)on A as B
+,think of A as B
+,see A as B
+,I consider Tom kind.
+to 부정사와 동명사를 둘 다 취하는 동사,(3형식)
+,remember
+,forget
+,try
+,regret
+,stop
+,I forget to meet you.
+,I forget meeting you.
+to 부정사를 목적어로 취하는 동사,choose(=decide)
+,afford
+,manage
+,(3형식)
+,더 적어
+동명사를 목적어로 취하는 동사,"(3형식), 메가팍스"
+,mind
+,enjoy
+,give up
+,avoid
+,finish
+,admit (to)
+,consider
+,suggest
+형식 별 해석 방법,1형식: S+자V
+,'S'가 'V'하다 / 'S'는 가다
+,Birds sleep (in the tree).
+,I go (to the school).
+,.
+,2형식: S+beV+주격C
+,'S'가 'C'이다 / 'S'가 'C'되다
+,She is a teacher.
+,I turned sad.
+,The dogs can make a nice pet.
+,.
+,3형식: S+타V+직O
+,'S'가 'O'를 'V'하다
+,She made a gift.
+,I choose to study English.
+,I mind staying along at night.
+,I remembered to meet you.
+,I remembered meeting you.
+,.
+,4형식: S+타V+간O+직O
+,'S'가 '간O'에게 '직O'을 'V'하다
+,He give me a book.
+,.
+,5형식: S+타V+직O+목적격O.C
+,'S'가 '직O'에게 'O.C'하게 하다
+,I know him kind.
+,I found him a liar.
+,He consider Tom clever.
